@@ -124,12 +124,12 @@ isDxVif=`aws directconnect describe-virtual-interfaces --region $region | grep $
 isDxGw=`aws directconnect describe-direct-connect-gateway-associations --virtual-gateway-id $oldVgw --region $region | grep $oldVgw`
 if [ $isDxVif ]; then
  echo ""
- echo "DX VIF"
+ echo "Your VGW is affiliated with Direct Connect resources. We do not recommend using these scripts to migrate VGWs with Direct Connect objects"
  echo "Exiting the script"
  exit 1
 elif [ $isDxGw ]; then
  echo ""
- echo "DX GW"
+ echo "Your VGW is affiliated with Direct Connect resources. We do not recommend using these scripts to migrate VGWs with Direct Connect objects."
  echo "Exiting the script"
  exit 1
 else
