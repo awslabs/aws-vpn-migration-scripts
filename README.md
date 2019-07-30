@@ -4,7 +4,7 @@ AWS VPN Migration scripts that provide a simple way to migrate from a Classic VP
 
 ## License
 
-This library is licensed under the Amazon Software License.
+This library is licensed under the Apache 2.0 License.
 
 ## Scripts Used for Migration
 
